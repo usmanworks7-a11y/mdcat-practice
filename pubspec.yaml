@@ -1,0 +1,26 @@
+name: mdcat_practice
+description: Free offline MCQ practice app.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.4.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2            # simple state management
+  shared_preferences: ^2.3.0  # saves progress and settings on the phone
+  http: ^1.2.0                # downloads version.json and mcqs.json
+  path_provider: ^2.1.0       # finds the app folder to keep the saved data file
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/mcqs.json
+    - assets/version.json
